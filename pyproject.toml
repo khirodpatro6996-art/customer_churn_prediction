@@ -1,3 +1,0 @@
-[project]
-name = "customer-churn-prediction"
-requires-python = "==3.11.*"

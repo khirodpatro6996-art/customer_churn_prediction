@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
 # -------------------------------
 # Page Config (must be FIRST)
@@ -13,8 +14,13 @@ st.set_page_config(
 # -------------------------------
 # Load model & metadata
 # -------------------------------
-model = joblib.load("../models/churn_model_pipeline.pkl")
-feature_metadata = joblib.load("../models/feature_metadata.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "churn_model_pipeline.pkl")
+METADATA_PATH = os.path.join(BASE_DIR, "..", "models", "feature_metadata.pkl")
+
+model = joblib.load(MODEL_PATH)
+feature_metadata = joblib.load(METADATA_PATH)
 
 
 numerical_features = feature_metadata["numerical_features"]

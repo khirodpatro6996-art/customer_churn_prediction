@@ -13,8 +13,9 @@ st.set_page_config(
 # -------------------------------
 # Load model & metadata
 # -------------------------------
-model = joblib.load("models/churn_model_pipeline.pkl")
-feature_metadata = joblib.load("models/feature_metadata.pkl")
+model = joblib.load("../models/churn_model_pipeline.pkl")
+feature_metadata = joblib.load("../models/feature_metadata.pkl")
+
 
 
 numerical_features = feature_metadata["numerical_features"]

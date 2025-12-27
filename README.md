@@ -1,6 +1,8 @@
 
 # 📊 Telecom Customer Churn Analysis & Prediction
 
+🔗 Live App: (https://customerchurnprediction-ttumsm6b66ger3xsdcjcvf.streamlit.app/) 
+
 ## 🔹 Project Overview
 
 This project presents an **end-to-end churn analytics and prediction pipeline** for a telecom business, combining **data cleaning, feature engineering, SQL analysis, Power BI visualization, machine learning modeling, and deployment**.
